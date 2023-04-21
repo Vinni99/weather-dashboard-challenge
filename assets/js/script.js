@@ -1,5 +1,4 @@
-// GLOBALS
-
+// Global Variables
 var city = "";
 var cityArr = JSON.parse(localStorage.getItem("searchedCity")) || [];
 
