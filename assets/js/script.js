@@ -61,11 +61,9 @@ $(document).on("click", ".btn-secondary", function() {
 function fetchWeather(cityName) {
 
   // GET LONGITUDE AND LATITUDE
-  fetch(
-    'http://api.openweathermap.org/geo/1.0/direct?' +
-    'q=' + cityName +
-    '&appid=527dcf6e38939483d3ad43186117df6b'
-    )
+var requestUrl = 'http://api.openweathermap.org/geo/1.0/direct?' + 'q=' + cityName + '&appid=527dcf6e38939483d3ad43186117df6b'; 
+
+  fetch(requestUrl)
       .then(function(response) {
         return response.json();
       })
@@ -74,14 +72,10 @@ function fetchWeather(cityName) {
         var cityLong = response[0].lon;
         
         // GET WEATHER
-        return fetch(
-          'https://api.openweathermap.org/data/2.5/onecall?' +
-            '&lat=' + cityLat +
-            '&lon=' + cityLong +
-            '&exclude=minutely,hourly,alerts' + 
-            '&units=imperial' +
-            '&appid=527dcf6e38939483d3ad43186117df6b'
-        );
+      var requestUrl1 = 'https://api.openweathermap.org/data/2.5/onecall?' + '&lat=' + cityLat + '&lon=' + cityLong + '&exclude=minutely,hourly,alerts' + '&units=imperial' + '&appid=527dcf6e38939483d3ad43186117df6b';  
+
+
+        return fetch(requestUrl1);
       })
       .then(function(response) {
         return response.json();
