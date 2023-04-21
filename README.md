@@ -34,7 +34,7 @@ THEN I am again presented with current and future conditions for that city
 
 The following image shows the web application's appearance and functionality:
 
-![Alt text](Weather-Dashboard.png)
+![Alt text](assets/mock-up/Weather-Dashboard.png)
 
 ## Links
 
