@@ -61,7 +61,7 @@ $(document).on("click", ".btn-secondary", function() {
 function fetchWeather(cityName) {
 
   // GET LONGITUDE AND LATITUDE
-var requestUrl = 'http://api.openweathermap.org/geo/1.0/direct?' + 'q=' + cityName + '&appid=527dcf6e38939483d3ad43186117df6b'; 
+var requestUrl = 'https://api.openweathermap.org/geo/1.0/direct?' + 'q=' + cityName + '&appid=527dcf6e38939483d3ad43186117df6b'; 
 
   fetch(requestUrl)
       .then(function(response) {

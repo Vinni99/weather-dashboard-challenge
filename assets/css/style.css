@@ -1,4 +1,18 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(251, 251, 251);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black;
+}
+
 .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -15,7 +29,7 @@
 }
 
 .city-display {
-    border: 1px solid rgb(12, 0, 238);
+    border: 1px solid rgb(251, 251, 251);
 }
 
 .city-display-content, 
@@ -30,6 +44,9 @@
 
 .forecast-display {
     border: 1px solid transparent;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
 }
 
 .forecast-daily-boxes {
@@ -44,18 +61,52 @@
     width: 19%;
     border: 3px solid navy;
     display: block;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black;
 }
 
 .box-contents {
     color: white;
     display: inline-block;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black;
 }
 
 #uv-style {
     color: white;
     margin: 2px 5px 2px 5px;
     border-radius: 3px;
+    padding: 2px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black;
 
 }
 
